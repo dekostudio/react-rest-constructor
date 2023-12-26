@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* base */
+
+:root {
+  --header-height: 4rem;
+
+  /* fonts */
+  --body-font: 'Manrope', sans-serif;
+
+  /* size */  
+  --section-font-size: 4em;
+  --title-font-size: 4em;
+  --logo-font-size: 2em;
+  --desc-font-size: 1.2em;
+  --normal-font-size: 1em;
+
+  /* font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 700;
+
+  /* color */
+  --body-color: #FFFFFF;
+  --title-color: #000000;
+  --desc-color: #B0B0B0;
+  --nav-link: #AEAEAE;
+  --btn-bg: #000000;
+  --card-color: linear-gradient(180deg, #F5F5F5 0%, #EBEBEB 100%);  
+}
+
+@media screen and (max-width: 1400px) {
+  :root {
+    /* size mobile */
+    --section-font-size: 2.5em;
+    --title-font-size: 2em;
+    --desc-font-size: 1em;
+    --normal-font-size: 1em;
+    --logo-font-size: 1.5em;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button, input {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+h1 {
+  color: var(--title-color);
+  font-size: var(--title-font-size);
+  font-family: var(--font-semi-bold);
+}
+
+p {
+  color: var(--desc-color);
+  font-size: var(--desc-font-size);
+}
+
+button, body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--title-color);
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+/* base */
+
+.container {
+  max-width: 1700px;
+  margin-inline: 1.5rem;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    margin: 0 auto;
+  }
+}
