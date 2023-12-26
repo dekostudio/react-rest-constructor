@@ -1,3 +1,3 @@
 export { baseApi } from './baseApi'
-export { SESSION_TAG } from './tags'
+export { SESSION_TAG, USER_TAG } from './tags'
 export { invalidateAccessToken } from './invalidateTokenEvent'
