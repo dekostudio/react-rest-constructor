@@ -1,4 +1,4 @@
-import { useMeQuery } from "@/entities/session"
+import { useMeQuery } from "@/entities/user"
 import { useAppSelector } from "@/shared/model"
 import { skipToken } from "@reduxjs/toolkit/query"
 
