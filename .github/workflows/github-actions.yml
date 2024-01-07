@@ -14,7 +14,6 @@ jobs:
       matrix:
         node-version: [18.x]
     steps:
-      - name: Check out the repository to the runner
       - uses: actions/checkout@v4
       - name: Starting Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
