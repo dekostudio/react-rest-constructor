@@ -3,6 +3,7 @@ import { MainPage } from "@/pages/main";
 import { baseLayout } from "./layouts/baseLayout";
 import { Signin } from "@/pages/signin";
 import { Signup } from "@/pages/signup";
+import { ProjectPage } from "@/pages/project";
 
 export const appRouter = createBrowserRouter([
   {
@@ -13,6 +14,12 @@ export const appRouter = createBrowserRouter([
         path: '/',
         element: (
           <MainPage />
+        )
+      },
+      {
+        path: '/projects',
+        element: (
+          <ProjectPage />
         )
       },
       {
