@@ -12,7 +12,7 @@ const AUTH_ERROR_CODES = new Set([401])
 export async function baseQueryWithReauth(
   args: string | FetchArgs,
   api: BaseQueryApi,
-  extraOptions: {},
+  extraOptions: any,
 ) {
   const result = await baseQuery(args, api, extraOptions)
   
